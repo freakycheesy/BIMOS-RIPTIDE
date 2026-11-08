@@ -4,6 +4,7 @@ namespace BIMOS.Netcode
 {
     public enum ServerToClient : ushort
     {
+        Sync,
         Rpc,
         SetOwner,
         Spawn,

@@ -44,7 +44,7 @@ namespace BIMOS.Samples
         private bool _slideBack = false;
 
         // Really bad fix for a really annoying problem.
-        // The chamber and slide back order would get messed up on prefab instances, but not dragged in prefabs.
+        // The chamber and slide back order would get messed up on prefab instances, but not dragged in Prefabs.
         private void FixedUpdate()
         {
             if (_chamber)

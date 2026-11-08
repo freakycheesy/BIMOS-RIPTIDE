@@ -63,7 +63,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 11875844792549948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9532871a25b1daf44ab4f9c28824507b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a020fa2324e8c34f96f983f9fee2e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerDownEvent:
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3936826370237375237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9532871a25b1daf44ab4f9c28824507b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a020fa2324e8c34f96f983f9fee2e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerDownEvent:

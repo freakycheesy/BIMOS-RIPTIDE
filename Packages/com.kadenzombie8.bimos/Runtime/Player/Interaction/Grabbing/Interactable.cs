@@ -5,7 +5,7 @@ using UnityEngine.Events;
 namespace BIMOS
 {
     [AddComponentMenu("BIMOS/Grabs/Interactable")]
-    public class Interactable : MonoBehaviour
+    public class Interactable : MonoBehaviour, IGrabbable, IInteractable
     {
         public UnityEvent
             TriggerDownEvent,

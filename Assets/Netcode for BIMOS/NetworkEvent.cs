@@ -1,3 +1,4 @@
+using LiteNetLib.Utils;
 using Riptide;
 using System;
 using UnityEngine;
@@ -19,27 +20,27 @@ namespace BIMOS.Netcode
             
         }
 
-        private void RpcOnEvent(Message reader)
+        private void RpcOnEvent(NetDataReader reader)
         {
             Event?.Invoke(reader.GetUShort());
         }
 
-        private void CmdOnEvent(Connection sender, Message reader)
+        private void CmdOnEvent(Connection sender, NetDataReader reader)
         {
-            foreach(var connection in NetworkManager.Instance.server.Clients)
+            foreach(var connection in NetworkServer.Instance.Clients)
             {
                 if(allowDesync && connection == sender) continue;
-                identity.SendTargetRpc(RPC_EVENT, connection, Message.Create().Add(sender.Id), MessageSendMode.Reliable);
+                identity.SendTargetRpc(RPC_EVENT, connection, MessageSendMode.Reliable, sender.Id);
             }
         }
 
         public void Invoke()
         {
-            if (!NetworkManager.Instance.client.IsConnected) {
+            if (!NetworkClient.Instance.IsConnected) {
                 Event?.Invoke(0);
                 return;
             } 
-            if(allowDesync) Event?.Invoke(NetworkManager.Instance.client.Id);
+            if(allowDesync) Event?.Invoke(NetworkClient.Instance.Id);
             identity.SendCommand(CMD_EVENT, sendMode:MessageSendMode.Reliable);
         }
     }

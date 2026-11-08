@@ -2,8 +2,8 @@ namespace BIMOS
 {
     public interface IInteractable
     {
-        void OnPrimary(); //Called when the primary button is pressed
-        void OnSecondary(); //Called when the secondary button is pressed
-        void OnTrigger(); //Called when the trigger is pressed
+        void OnPrimary(bool isButtonDown); //Called when the primary button is pressed
+        void OnSecondary(bool isButtonDown); //Called when the secondary button is pressed
+        void OnTrigger(bool isButtonDown); //Called when the trigger is pressed
     }
 }

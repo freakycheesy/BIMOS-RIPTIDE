@@ -1,17 +1,18 @@
 using Riptide;
 using Riptide.Utils;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace BIMOS.Netcode
 {
+    [DefaultExecutionOrder(-100)]
     public class NetworkManager : MonoBehaviour
     {
         public static NetworkManager Instance { get; private set; }
-        public Server server { get; set; }
-        public Client client { get; set; }
+
         [SerializeField] private GameObject[] _prefabs = new GameObject[256];
-        public Dictionary<uint, GameObject> prefabs = new();
+        public Dictionary<uint, GameObject> Prefabs { get; } = new();
         private void Start()
         {
             if (Instance)
@@ -20,15 +21,13 @@ namespace BIMOS.Netcode
                 return;
             }
             Instance = this;
-            prefabs.Clear();
+            Prefabs.Clear();
             RiptideLogger.Initialize(Debug.Log, false);
-            server = new();
-            client = new();
             foreach (var prefab in _prefabs)
             {
                 if(prefab.TryGetComponent(out NetworkIdentity identity))
                 {
-                    prefabs.Add(identity.assetId, prefab);
+                    Prefabs.Add(identity.assetId, prefab);
                 }
                 else
                 {
@@ -38,10 +37,10 @@ namespace BIMOS.Netcode
             DontDestroyOnLoad(gameObject);
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            server.Update();
-            client.Update();
+            NetworkServer.FixedUpdate();
+            NetworkClient.FixedUpdate();        
         }
     }
 }

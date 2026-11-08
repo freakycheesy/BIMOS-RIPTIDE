@@ -4,13 +4,14 @@ using UnityEngine;
 
 namespace BIMOS.Netcode
 {
+    [DefaultExecutionOrder(-99)]
     public class NetworkLevel : MonoBehaviour
     {
         [SerializeField] private NetworkIdentity[] _identities;
         public Dictionary<int, NetworkIdentity> identities { get; private set; } = new Dictionary<int, NetworkIdentity>();
         public Dictionary<int, NetworkIdentity> spawned { get; private set; } = new Dictionary<int, NetworkIdentity>();
         public static NetworkLevel Instance { get; private set; }
-        private void Start()
+        private void Awake()
         {
             identities.Clear();
             spawned.Clear();

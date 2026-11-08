@@ -1,4 +1,5 @@
 using BIMOS.Netcode;
+using LiteNetLib.Utils;
 using Riptide;
 using UnityEngine;
 using UnityEngine.Events;
@@ -33,7 +34,7 @@ public class NetworkedDistanceTrigger : NetworkBehaviour, IDistanceTrigger
         RPC_DEACTIVATE = identity.RegisterRpc((_) => RpcDeactivated());
     }
 
-    private void CmdDeactivate(Connection sender, Message reader)
+    private void CmdDeactivate(Connection sender, NetDataReader reader)
     {
         if (AllowDesync)
         {
@@ -45,7 +46,7 @@ public class NetworkedDistanceTrigger : NetworkBehaviour, IDistanceTrigger
         }
     }
 
-    private void CmdActivate(Connection sender, Message reader)
+    private void CmdActivate(Connection sender, NetDataReader reader)
     {
         if (AllowDesync)
         {

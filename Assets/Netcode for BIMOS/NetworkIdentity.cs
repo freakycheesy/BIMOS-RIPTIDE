@@ -1,3 +1,4 @@
+using LiteNetLib.Utils;
 using Riptide;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,10 @@ namespace BIMOS.Netcode
     public class NetworkIdentity : MonoBehaviour
     {
         public uint assetId;
-        public static Server server => NetworkManager.Instance.server;
-        public static Client client => NetworkManager.Instance.client;
         public NetworkBehaviour[] behaviours { get; set; }
         public int id { get; internal set; } = -1;
         public ushort ownerId { get; internal set; }
-        public bool isMine => ownerId == client.Id;
+        public bool isMine => NetworkClient.Instance.IsConnected && ownerId == NetworkClient.Instance.Id;
         private Dictionary<byte, CommandCallback> commands { get; set; } = new();
         private Dictionary<byte, RPCCallback> rpcs { get; set; } = new();
         private void Awake()
@@ -42,17 +41,18 @@ namespace BIMOS.Netcode
 
         public void SetOwnership(Connection newOwner)
         {
-            if (!server.IsRunning) return;
+            if (!NetworkServer.Instance.IsRunning) return;
             ownerId = newOwner.Id;
             Message message = Message.Create(MessageSendMode.Reliable, (ushort)ServerToClient.SetOwner);
             message.Add(id);
             message.Add(ownerId);
-            server.SendToAll(message);
+            if (NetworkClient.Instance.IsConnected) NetworkServer.Instance.SendToAll(message, NetworkClient.Instance.Id);
+            else NetworkServer.Instance.SendToAll(message);
         }
 
         public void Serialize()
         {
-            if (!client.IsConnected) return;
+            if (!NetworkClient.Instance.IsConnected) return;
             if (!isMine) return;
             Message message = Message.Create(MessageSendMode.Unreliable, (ushort)ClientToServer.Serialize);
             message.Add(id);
@@ -60,11 +60,11 @@ namespace BIMOS.Netcode
             {
                 behaviour.OnSerialize(message);
             }
-            client.Send(message);
+            NetworkClient.Instance.Send(message);
         }
         public void Deserialize(Message message)
         {
-            if (!client.IsConnected) return;
+            if (!NetworkClient.Instance.IsConnected) return;
             foreach (var behaviour in behaviours)
             {
                 behaviour.OnDeserialize(message);
@@ -89,13 +89,20 @@ namespace BIMOS.Netcode
         /// <param name="connection">the connection receiving the rpc</param>
         /// <param name="data">the data</param>
         /// <param name="sendMode">reliablility</param>
-        public void SendTargetRpc(byte rpc, Connection connection, Message data = null, MessageSendMode sendMode = MessageSendMode.Unreliable)
+        public void SendTargetRpc(byte rpc, Connection connection, MessageSendMode sendMode = MessageSendMode.Unreliable, params object[] objects)
         {
-            if (!server.IsRunning) return;
+            if (!NetworkServer.Instance.IsRunning) return;
             Message message = Message.Create(sendMode, (ushort)ServerToClient.Rpc);
             message.Add(id);
             message.Add(rpc);
-            if(data != null) message.AddMessage(data);
+            if (objects != null && objects.Length > 0) {
+                NetDataWriter writer = new();
+                foreach(var obj in objects)
+                {
+                    writer.Serialize(obj);
+                }
+                message.Add(writer.CopyData());
+            }
             connection.Send(message);
         }
         /// <summary>
@@ -104,14 +111,22 @@ namespace BIMOS.Netcode
         /// <param name="rpc">the rpc id</param>
         /// <param name="data">the data</param>
         /// <param name="sendMode">reliablility</param>
-        public void SendClientRpc(byte rpc, Message data = null, MessageSendMode sendMode = MessageSendMode.Unreliable)
+        public void SendClientRpc(byte rpc, MessageSendMode sendMode = MessageSendMode.Unreliable, params object[] objects)
         {
-            if (!server.IsRunning) return;
+            if (!NetworkServer.Instance.IsRunning) return;
             Message message = Message.Create(sendMode, (ushort)ServerToClient.Rpc);
             message.Add(id);
             message.Add(rpc);
-            if (data != null) message.AddMessage(data);
-            server.SendToAll(message);
+            if (objects != null && objects.Length > 0)
+            {
+                NetDataWriter writer = new();
+                foreach (var obj in objects)
+                {
+                    writer.Serialize(obj);
+                }
+                message.Add(writer.CopyData());
+            }
+            NetworkServer.Instance.SendToAll(message);
         }
         /// <summary>
         /// Sends an rpc to everyone
@@ -119,55 +134,65 @@ namespace BIMOS.Netcode
         /// <param name="rpc">the rpc id</param>
         /// <param name="data">the data</param>
         /// <param name="sendMode">reliablility</param>
-        public void SendClientRpc(byte rpc, Connection excluded, Message data = null, MessageSendMode sendMode = MessageSendMode.Unreliable)
+        public void SendClientRpc(byte rpc, Connection excluded, MessageSendMode sendMode = MessageSendMode.Unreliable, params object[] objects)
         {
-            if (!server.IsRunning) return;
+            if (!NetworkServer.Instance.IsRunning) return;
             Message message = Message.Create(sendMode, (ushort)ServerToClient.Rpc);
             message.Add(id);
             message.Add(rpc);
-            if (data != null) message.AddMessage(data);
-            server.SendToAll(message, excluded.Id);
+            if (objects != null && objects.Length > 0)
+            {
+                NetDataWriter writer = new();
+                foreach (var obj in objects)
+                {
+                    writer.Serialize(obj);
+                }
+                message.Add(writer.CopyData());
+            }
+            NetworkServer.Instance.SendToAll(message, excluded.Id);
         }
         /// <summary>
-        /// Sends an rpc to the server
+        /// Sends an rpc to the Instance
         /// </summary>
         /// <param name="command">the rpc id</param>
         /// <param name="data">the data</param>
         /// <param name="sendMode">reliablility</param>
         public void SendCommand(byte command, Message data = null, MessageSendMode sendMode = MessageSendMode.Unreliable)
         {
-            if (!client.IsConnected) return;
+            if (!NetworkClient.Instance.IsConnected) return;
             Message message = Message.Create(sendMode, (ushort)ClientToServer.Command);
             message.Add(id);
             message.Add(command);
             if (data != null) message.AddMessage(data);
-            client.Send(message);
+            NetworkClient.Instance.Send(message);
         }
         public void Spawn()
         {
-            if (!server.IsRunning) return;
+            if (!NetworkServer.Instance.IsRunning) return;
             Message message = Message.Create(MessageSendMode.Reliable, ServerToClient.Spawn);
             message.Add(assetId);
             message.Add(ownerId);
             message.Add(transform.position);
             message.Add(transform.rotation);
-            server.SendToAll(message, client.Id);
+            if (NetworkClient.Instance.IsConnected) NetworkServer.Instance.SendToAll(message, NetworkClient.Instance.Id);
+            else NetworkServer.Instance.SendToAll(message);
             NetworkLevel.Instance.RegisterIdentity(this, true);
         }
         public void Despawn(bool destroy = true)
         {
-            if (!server.IsRunning) return;
+            if (!NetworkServer.Instance.IsRunning) return;
             Message message = Message.Create(MessageSendMode.Reliable, ServerToClient.Despawn);
             message.Add(id);
             message.Add(destroy);
-            server.SendToAll(message, client.Id);
+            if (NetworkClient.Instance.IsConnected) NetworkServer.Instance.SendToAll(message, NetworkClient.Instance.Id);
+            else NetworkServer.Instance.SendToAll(message);
             if (destroy) Destroy(gameObject);
             else gameObject.SetActive(false);
         }
         [MessageHandler((ushort)ServerToClient.Spawn)]
         static void HandleSpawn(Message received)
         {
-            var instance = Instantiate(NetworkManager.Instance.prefabs[received.GetUShort()]);
+            var instance = Instantiate(NetworkManager.Instance.Prefabs[received.GetUShort()]);
             instance.GetComponent<NetworkIdentity>().ownerId = received.GetUShort();
             instance.transform.position = received.GetVector3();
             instance.transform.rotation = received.GetQuaternion();
@@ -189,7 +214,7 @@ namespace BIMOS.Netcode
             Message message = Message.Create(MessageSendMode.Unreliable, ServerToClient.Serialize);
             message.Add(identity.id);
             message.AddMessage(received);
-            server.SendToAll(message, sender);
+            NetworkServer.Instance.SendToAll(message, sender);
         }
         [MessageHandler((ushort)ServerToClient.Serialize)]
         static void HandleSerialize(Message received)
@@ -202,10 +227,10 @@ namespace BIMOS.Netcode
         [MessageHandler((ushort)ClientToServer.Command)]
         static void HandleCommand(ushort sender, Message received)
         {
-            if (!server.TryGetClient(sender, out Riptide.Connection connection)) return;
+            if (!NetworkServer.Instance.TryGetClient(sender, out Riptide.Connection connection)) return;
             var identity = NetworkLevel.Instance.identities[received.GetInt()];
             if(identity == null) return;
-            identity.commands[received.GetByte()].Invoke(connection, received);       
+            identity.commands[received.GetByte()].Invoke(connection, new(received.GetBytes()));       
         }
 
         [MessageHandler((ushort)ServerToClient.Rpc)]
@@ -213,7 +238,7 @@ namespace BIMOS.Netcode
         {
             var identity = NetworkLevel.Instance.identities[received.GetInt()];
             if (identity == null) return;
-            identity.rpcs[received.GetByte()].Invoke(received);
+            identity.rpcs[received.GetByte()].Invoke(new(received.GetBytes()));
         }
 
         [MessageHandler((ushort)ServerToClient.SetOwner)]

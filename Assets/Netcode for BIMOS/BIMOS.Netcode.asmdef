@@ -3,7 +3,8 @@
     "rootNamespace": "BIMOS.Netcode",
     "references": [
         "GUID:303e84476c52562438a4cea31bf9b794",
-        "GUID:d9bbc61d820433c42883dc4de8b0e42f"
+        "GUID:d9bbc61d820433c42883dc4de8b0e42f",
+        "GUID:b80a0fa09d726f147a82a90d286db803"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

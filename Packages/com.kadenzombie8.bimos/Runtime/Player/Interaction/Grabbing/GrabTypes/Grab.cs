@@ -82,7 +82,7 @@ namespace BIMOS
                     grab.enabled = false;
             }
 
-            GetComponent<Interactable>()?.OnGrab();
+            GetComponent<IGrabbable>()?.OnGrab();
         }
 
         public virtual void IgnoreCollision(Hand hand, bool ignore)
@@ -124,7 +124,7 @@ namespace BIMOS
                 }
             }
 
-            GetComponent<Interactable>()?.OnRelease();
+            GetComponent<IGrabbable>()?.OnRelease();
 
             hand.CurrentGrab = null;
 
