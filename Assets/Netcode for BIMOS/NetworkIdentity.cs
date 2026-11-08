@@ -157,13 +157,21 @@ namespace BIMOS.Netcode
         /// <param name="command">the rpc id</param>
         /// <param name="data">the data</param>
         /// <param name="sendMode">reliablility</param>
-        public void SendCommand(byte command, Message data = null, MessageSendMode sendMode = MessageSendMode.Unreliable)
+        public void SendCommand(byte command, MessageSendMode sendMode = MessageSendMode.Unreliable, params object[] objects)
         {
             if (!NetworkManager.Client.IsConnected) return;
             Message message = Message.Create(sendMode, (ushort)ClientToServer.Command);
             message.Add(id);
             message.Add(command);
-            if (data != null) message.AddMessage(data);
+            if (objects != null && objects.Length > 0)
+            {
+                NetDataWriter writer = new();
+                foreach (var obj in objects)
+                {
+                    writer.Serialize(obj);
+                }
+                message.Add(writer.CopyData());
+            }
             NetworkManager.Client.Send(message);
         }
         public void Spawn()

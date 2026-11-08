@@ -25,7 +25,8 @@ namespace BIMOS.Netcode
 
         private byte CMD_GRAB;
         private byte RPC_GRAB;
-
+        private byte CMD_RELEASE;
+        private byte RPC_RELEASE;
         private void Awake()
         {
             _grab = GetComponent<Grab>();
@@ -33,12 +34,33 @@ namespace BIMOS.Netcode
         }
         public override void RegisterRpcs(NetworkIdentity identity)
         {
-            identity.RegisterCommand(CmdGrab);
+            CMD_GRAB = identity.RegisterCommand(CmdGrab);
+            RPC_GRAB = identity.RegisterRpc((_)=>RpcGrab());
+            CMD_RELEASE = identity.RegisterCommand(CmdRelease);
+            RPC_RELEASE = identity.RegisterRpc((_)=>RpcRelease());
+        }
+
+        private void RpcRelease()
+        {
+            ReleaseEvent.Invoke();
+        }
+
+        private void CmdRelease(Connection sender, NetDataReader reader)
+        {
+            if (AllowDesync) identity.SendClientRpc(RPC_RELEASE, sender, MessageSendMode.Reliable);
+            else identity.SendClientRpc(RPC_RELEASE, MessageSendMode.Reliable);
+        }
+
+        private void RpcGrab()
+        {
+            GrabEvent.Invoke();
         }
 
         private void CmdGrab(Connection sender, NetDataReader reader)
         {
-            throw new NotImplementedException();
+            if (AutoOwnership) identity.SetOwnership(sender);
+            if (AllowDesync) identity.SendClientRpc(RPC_GRAB, sender, MessageSendMode.Reliable);
+            else identity.SendClientRpc(RPC_GRAB, MessageSendMode.Reliable);
         }
 
         private void CheckInputs(out float trigger, out bool primary, out bool secondary)
@@ -104,11 +126,13 @@ namespace BIMOS.Netcode
         }
         public void OnGrab()
         {
-            GrabEvent.Invoke();
+            if(AllowDesync) RpcGrab();
+            identity.SendCommand(CMD_GRAB, MessageSendMode.Reliable);
         }
         public void OnRelease()
         {
-            ReleaseEvent.Invoke();
+            if (AllowDesync) RpcRelease();
+            identity.SendCommand(CMD_RELEASE, MessageSendMode.Reliable);
         }
 
         [System.Serializable]
