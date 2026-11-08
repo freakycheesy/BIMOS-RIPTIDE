@@ -8,6 +8,7 @@ namespace BIMOS.Netcode
     public class NetworkEvent : NetworkBehaviour
     {
         public UnityEvent<ushort> Event;
+        public bool allowDesync = true;
         private byte CMD_EVENT;
         private byte RPC_EVENT;
         public override void RegisterRpcs(NetworkIdentity identity)
@@ -27,14 +28,18 @@ namespace BIMOS.Netcode
         {
             foreach(var connection in NetworkManager.Instance.server.Clients)
             {
-                if (connection == sender) continue;
+                if(allowDesync && connection == sender) continue;
                 identity.SendTargetRpc(RPC_EVENT, connection, Message.Create().Add(sender.Id), MessageSendMode.Reliable);
             }
         }
 
         public void Invoke()
         {
-            Event?.Invoke(NetworkManager.Instance.client.Id);
+            if (!NetworkManager.Instance.client.IsConnected) {
+                Event?.Invoke(0);
+                return;
+            } 
+            if(allowDesync) Event?.Invoke(NetworkManager.Instance.client.Id);
             identity.SendCommand(CMD_EVENT, sendMode:MessageSendMode.Reliable);
         }
     }

@@ -1413,6 +1413,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f442031b06f314ba0c53c39c483701, type: 3}
+--- !u!114 &126477748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4127921809214093844, guid: b9f442031b06f314ba0c53c39c483701, type: 3}
+  m_PrefabInstance: {fileID: 126477747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &128155238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,6 +1886,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df472f8322ae99a499d0689bd395bdec, type: 3}
+--- !u!114 &175209401 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5904360224911767052, guid: df472f8322ae99a499d0689bd395bdec, type: 3}
+  m_PrefabInstance: {fileID: 175209400}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &178182572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,6 +2582,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7073b2e6e3b3f7649abd05e5aefa040a, type: 3}
+--- !u!114 &236282581 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9008439726057336472, guid: 7073b2e6e3b3f7649abd05e5aefa040a, type: 3}
+  m_PrefabInstance: {fileID: 236282580}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1001 &236497159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3344,6 +3377,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+--- !u!114 &357041968 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8529210079364327685, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+  m_PrefabInstance: {fileID: 357041967}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &381151208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,6 +3611,600 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+--- !u!114 &391972836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3121690634768533404, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1139323979431024632, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5076539540034295921, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8676921593810447133, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6251509481158828908, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972841 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1028823786006606525, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8524661289661964275, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972843 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5808465087783538466, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3875520735629088698, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972845 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568379372299110665, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3145041066791647994, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1493406134976236202, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972848 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4464843141983785017, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972849 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 401892634750914570, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7152083822458010685, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972851 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6987223370897275313, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972852 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1339727780783843386, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 665845642908010458, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5591351922522226367, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972855 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7587593185360518927, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972856 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093382741503243411, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972857 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7237141050572770144, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972858 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6128216750165304871, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3658703399624588448, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972860 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6493860077073027541, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1973776779039860580, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972862 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8744000080920727938, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972863 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2353443252952340916, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6271721095426979122, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972865 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8860171014264076450, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3403390332091500736, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972867 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7284569201803845796, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4936672656885230690, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7144429337864536153, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972870 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7349002568783619604, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9217237525713578196, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972872 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5858269639090216898, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2847268862437169682, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3751514111418378297, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1261392257996738898, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3538183450786256195, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8168077783764914409, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1453900764373589572, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4768904376604894297, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972880 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6095883982172115274, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2502514842189303106, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5205363290290954342, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972883 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6869458346799595005, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972884 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1879224433980380320, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7221067760713264896, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3523579368640738211, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3553653356435486021, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5406225498926306152, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
+--- !u!114 &391972889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3478121820475542573, guid: effc1b0f78d8917498e8533a12c3b051, type: 3}
+  m_PrefabInstance: {fileID: 391972835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1001 &401461225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3980,6 +4618,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+--- !u!114 &429002472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8529210079364327685, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+  m_PrefabInstance: {fileID: 429002471}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &432971155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,6 +4674,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkLevel
   _identities:
+  - {fileID: 126477748}
+  - {fileID: 2055097257}
+  - {fileID: 929275836}
+  - {fileID: 1833013087}
+  - {fileID: 175209401}
+  - {fileID: 1586247301}
+  - {fileID: 1856170671}
+  - {fileID: 1114961008}
+  - {fileID: 1870403716}
+  - {fileID: 944345071}
+  - {fileID: 236282581}
+  - {fileID: 1575449603}
+  - {fileID: 1985681461}
+  - {fileID: 2135221249}
+  - {fileID: 7300989150176892050}
+  - {fileID: 1042777219}
+  - {fileID: 2125129492}
+  - {fileID: 357041968}
+  - {fileID: 429002472}
+  - {fileID: 1295458959}
+  - {fileID: 391972836}
+  - {fileID: 391972837}
+  - {fileID: 391972838}
+  - {fileID: 391972839}
+  - {fileID: 391972840}
+  - {fileID: 391972841}
+  - {fileID: 391972842}
+  - {fileID: 391972843}
+  - {fileID: 391972844}
+  - {fileID: 391972845}
+  - {fileID: 391972846}
+  - {fileID: 391972847}
+  - {fileID: 391972848}
+  - {fileID: 391972849}
+  - {fileID: 391972850}
+  - {fileID: 391972851}
+  - {fileID: 391972852}
+  - {fileID: 391972853}
+  - {fileID: 391972854}
+  - {fileID: 391972855}
+  - {fileID: 391972856}
+  - {fileID: 391972857}
+  - {fileID: 391972858}
+  - {fileID: 391972859}
+  - {fileID: 391972860}
+  - {fileID: 391972861}
+  - {fileID: 391972862}
+  - {fileID: 391972863}
+  - {fileID: 391972864}
+  - {fileID: 391972865}
+  - {fileID: 391972866}
+  - {fileID: 391972867}
+  - {fileID: 391972868}
+  - {fileID: 391972869}
+  - {fileID: 391972870}
+  - {fileID: 391972871}
+  - {fileID: 391972872}
+  - {fileID: 391972873}
+  - {fileID: 391972874}
+  - {fileID: 391972875}
+  - {fileID: 391972876}
+  - {fileID: 391972877}
+  - {fileID: 391972878}
+  - {fileID: 391972879}
+  - {fileID: 391972880}
+  - {fileID: 391972881}
+  - {fileID: 391972882}
+  - {fileID: 391972883}
+  - {fileID: 391972884}
+  - {fileID: 391972885}
+  - {fileID: 391972886}
+  - {fileID: 391972887}
+  - {fileID: 391972888}
+  - {fileID: 391972889}
   - {fileID: 1648887363}
   - {fileID: 1036000936}
   - {fileID: 1324814595}
@@ -9431,6 +10154,17 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 3609938548704600054, guid: 93e976bae0d560f4781d80920be48032, type: 3}
   m_PrefabInstance: {fileID: 944345069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &944345071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6015560993278244414, guid: 93e976bae0d560f4781d80920be48032, type: 3}
+  m_PrefabInstance: {fileID: 944345069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &955154953
 GameObject:
   m_ObjectHideFlags: 0
@@ -10340,6 +11074,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c178db0d39563b42a274ef940320f00, type: 3}
+--- !u!114 &1042777219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 127168684868189635, guid: 9c178db0d39563b42a274ef940320f00, type: 3}
+  m_PrefabInstance: {fileID: 1042777218}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1047430807
 GameObject:
   m_ObjectHideFlags: 0
@@ -11570,6 +12315,17 @@ ArticulationBody:
   m_CorrespondingSourceObject: {fileID: 243519319809013365, guid: 82e71acf7d783a54f9f49d839b212b90, type: 3}
   m_PrefabInstance: {fileID: 1114961006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1114961008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5151435676320295852, guid: 82e71acf7d783a54f9f49d839b212b90, type: 3}
+  m_PrefabInstance: {fileID: 1114961006}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1147197186
 GameObject:
   m_ObjectHideFlags: 0
@@ -13182,6 +13938,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+--- !u!114 &1295458959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8529210079364327685, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+  m_PrefabInstance: {fileID: 1295458958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!54 &1309727431 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 7495190394346104774, guid: 4f66eca8b68ae194f9896aecb09be69d, type: 3}
@@ -15320,6 +16087,17 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4184244221564938301, guid: 5ffc2b6068b8342429d6386a90811a9a, type: 3}
   m_PrefabInstance: {fileID: 1575449601}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1575449603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7376668961466642068, guid: 5ffc2b6068b8342429d6386a90811a9a, type: 3}
+  m_PrefabInstance: {fileID: 1575449601}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1582589258
 GameObject:
   m_ObjectHideFlags: 0
@@ -15474,6 +16252,17 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4502728816616114864, guid: 74a7455d9660df144adc62385230b3b3, type: 3}
   m_PrefabInstance: {fileID: 1586247299}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1586247301 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5115338939200212529, guid: 74a7455d9660df144adc62385230b3b3, type: 3}
+  m_PrefabInstance: {fileID: 1586247299}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1588726612
 GameObject:
   m_ObjectHideFlags: 0
@@ -16320,6 +17109,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1960055490}
   m_LocalEulerAnglesHint: {x: 29.775, y: 107.637, z: 94.929}
+--- !u!1 &1676945386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676945387}
+  - component: {fileID: 1676945388}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676945387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676945386}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676945388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676945386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccf1c9f3a1871044a8c3537def86aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkManager
+  _prefabs:
+  - {fileID: 4341489784411468778, guid: 94eca99dec189904f861aa4792311329, type: 3}
+  - {fileID: 4341489784411468778, guid: 4f66eca8b68ae194f9896aecb09be69d, type: 3}
+  - {fileID: 2613870063554952515, guid: df472f8322ae99a499d0689bd395bdec, type: 3}
+  - {fileID: 1321626674697047950, guid: 23551db1864d95d4f9531401c9a0098f, type: 3}
+  - {fileID: 7865068800297211517, guid: db2a608140dae46499ee33d1a13d9cde, type: 3}
+  - {fileID: 1508414611722424290, guid: 74a7455d9660df144adc62385230b3b3, type: 3}
+  - {fileID: 8251523010505339857, guid: cff30cf44f95a134c9042d0b946cd8fa, type: 3}
+  - {fileID: 4341489784411468778, guid: 82e71acf7d783a54f9f49d839b212b90, type: 3}
+  - {fileID: 818242109017265590, guid: 7073b2e6e3b3f7649abd05e5aefa040a, type: 3}
+  - {fileID: 1333864368141665207, guid: 5ffc2b6068b8342429d6386a90811a9a, type: 3}
+  - {fileID: 2092916111756551766, guid: f1c5be69f8f59b240b747a4077c43112, type: 3}
+  - {fileID: 4929446416404991574, guid: 692b3f377ab991b4eb093103d97a6dd1, type: 3}
+  - {fileID: 1711839410949451979, guid: e0091500ede7ad348bc71f0a356e8bd1, type: 3}
+  - {fileID: 8788318860504420956, guid: 570330c8a3b637f40b388efe0343aea4, type: 3}
+  - {fileID: 4321479124374150961, guid: c4ce9293d3513a343854ae797fc10ddc, type: 3}
+  - {fileID: 6987497256424189340, guid: 9873a594472deb0449c69c643fc5cc2f, type: 3}
 --- !u!1001 &1680420146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17696,6 +18546,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f66eca8b68ae194f9896aecb09be69d, type: 3}
+--- !u!114 &1833013087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5645317651984254171, guid: 4f66eca8b68ae194f9896aecb09be69d, type: 3}
+  m_PrefabInstance: {fileID: 1833013086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1001 &1833983143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17928,6 +18789,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82e71acf7d783a54f9f49d839b212b90, type: 3}
+--- !u!114 &1856170671 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5151435676320295852, guid: 82e71acf7d783a54f9f49d839b212b90, type: 3}
+  m_PrefabInstance: {fileID: 1856170670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1859415098
 GameObject:
   m_ObjectHideFlags: 0
@@ -18308,6 +19180,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8009156f08c98844b78c29ef32ee8a5, type: 3}
+--- !u!114 &1870403716 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5806123497603727903, guid: e8009156f08c98844b78c29ef32ee8a5, type: 3}
+  m_PrefabInstance: {fileID: 1870403715}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1891337235
 GameObject:
   m_ObjectHideFlags: 0
@@ -19267,6 +20150,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1c5be69f8f59b240b747a4077c43112, type: 3}
+--- !u!114 &1985681461 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 569056018343698257, guid: f1c5be69f8f59b240b747a4077c43112, type: 3}
+  m_PrefabInstance: {fileID: 1985681460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &1986625411
 GameObject:
   m_ObjectHideFlags: 0
@@ -20068,6 +20962,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f442031b06f314ba0c53c39c483701, type: 3}
+--- !u!114 &2055097257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4127921809214093844, guid: b9f442031b06f314ba0c53c39c483701, type: 3}
+  m_PrefabInstance: {fileID: 2055097256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &2059935062
 GameObject:
   m_ObjectHideFlags: 0
@@ -20688,6 +21593,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+--- !u!114 &2125129492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8529210079364327685, guid: 8853841a8fa293e42b39789a294e6310, type: 3}
+  m_PrefabInstance: {fileID: 2125129491}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1 &2126038161
 GameObject:
   m_ObjectHideFlags: 0
@@ -20860,6 +21776,17 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 9106794066525840272, guid: 692b3f377ab991b4eb093103d97a6dd1, type: 3}
   m_PrefabInstance: {fileID: 2135221247}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2135221249 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -4259450087640568716, guid: 692b3f377ab991b4eb093103d97a6dd1, type: 3}
+  m_PrefabInstance: {fileID: 2135221247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1001 &5296856312427993451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21000,11 +21927,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e13813d918c208c45bcc0c7720b68b57, type: 3}
+--- !u!114 &7300989150176892050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7540594792482071392, guid: e13813d918c208c45bcc0c7720b68b57, type: 3}
+  m_PrefabInstance: {fileID: 7300989150176892049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1689497626}
+  - {fileID: 1676945387}
   - {fileID: 432971156}
   - {fileID: 738113658}
   - {fileID: 5296856312427993451}
