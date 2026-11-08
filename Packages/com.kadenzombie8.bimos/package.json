@@ -1,0 +1,36 @@
+{
+  "name": "com.kadenzombie8.bimos",
+  "version": "1.0.0",
+  "displayName": "BIMOS",
+  "description": "Open-source physics-based VR character controller inspired by Boneworks",
+  "unity": "6000.0",
+  "documentationUrl": "https://github.com/KadenZombie8/BIMOS/wiki",
+  "changelogUrl": "https://github.com/KadenZombie8/BIMOS/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/KadenZombie8/BIMOS/blob/main/LICENSE.md",
+  "dependencies": {
+    "com.unity.xr.management": "4.4.0",
+    "com.unity.render-pipelines.universal": "17.0.3",
+    "com.unity.xr.openxr": "1.12.1",
+    "com.unity.inputsystem": "1.6.3",
+    "com.unity.animation.rigging": "1.3.0"
+  },
+  "keywords": [
+    "vr",
+    "xr",
+    "character",
+    "controller",
+    "physics"
+  ],
+  "author": {
+    "name": "KadenZombie8",
+    "email": "kadenzombie8@gmail.com"
+  },
+  "samples": [
+    {
+      "displayName": "Demo Assets",
+      "description": "Contains example assets from the BIMOS demo",
+      "path": "Samples~/Demo",
+      "interactiveImport": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "BIMOS.Netcode",
+    "rootNamespace": "BIMOS.Netcode",
+    "references": [
+        "GUID:303e84476c52562438a4cea31bf9b794",
+        "GUID:d9bbc61d820433c42883dc4de8b0e42f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
