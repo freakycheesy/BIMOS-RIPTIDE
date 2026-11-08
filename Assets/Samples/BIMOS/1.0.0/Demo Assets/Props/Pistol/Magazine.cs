@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace BIMOS.Samples
 {
-    public class Magazine : MonoBehaviour
+    public class Magazine : MonoBehaviour, IMagazine
     {
         public int MaxRounds;
         public int RemainingRounds;

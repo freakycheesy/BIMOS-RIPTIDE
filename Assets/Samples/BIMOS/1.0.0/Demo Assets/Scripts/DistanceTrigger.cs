@@ -4,7 +4,7 @@ using UnityEngine.Events;
 namespace BIMOS.Samples
 {
     [AddComponentMenu("BIMOS/Distance Trigger")]
-    public class DistanceTrigger : MonoBehaviour
+    public class DistanceTrigger : MonoBehaviour, IDistanceTrigger
     {
         public UnityEvent OnActivate, OnDeactivate;
         public UpdateEvent OnUpdate;
@@ -36,13 +36,13 @@ namespace BIMOS.Samples
             return 1 - Mathf.Clamp01(Vector3.Distance(transform.position, _activatedTransform.position) / _maxDistance);
         }
 
-        private void Activated()
+        public void Activated()
         {
             _isActivated = true;
             OnActivate.Invoke();
         }
 
-        private void Deactivated()
+        public void Deactivated()
         {
             _isActivated = false;
             OnDeactivate.Invoke();

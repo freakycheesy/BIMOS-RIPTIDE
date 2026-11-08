@@ -31,6 +31,7 @@ namespace BIMOS.Netcode
                 behaviour.RegisterRpcs(this);
             }
         }
+
         private void Start()
         {
             foreach (var behaviour in behaviours)
@@ -113,6 +114,21 @@ namespace BIMOS.Netcode
             server.SendToAll(message);
         }
         /// <summary>
+        /// Sends an rpc to everyone
+        /// </summary>
+        /// <param name="rpc">the rpc id</param>
+        /// <param name="data">the data</param>
+        /// <param name="sendMode">reliablility</param>
+        public void SendClientRpc(byte rpc, Connection excluded, Message data = null, MessageSendMode sendMode = MessageSendMode.Unreliable)
+        {
+            if (!server.IsRunning) return;
+            Message message = Message.Create(sendMode, (ushort)ServerToClient.Rpc);
+            message.Add(id);
+            message.Add(rpc);
+            if (data != null) message.AddMessage(data);
+            server.SendToAll(message, excluded.Id);
+        }
+        /// <summary>
         /// Sends an rpc to the server
         /// </summary>
         /// <param name="command">the rpc id</param>
@@ -147,17 +163,6 @@ namespace BIMOS.Netcode
             server.SendToAll(message, client.Id);
             if (destroy) Destroy(gameObject);
             else gameObject.SetActive(false);
-        }
-
-        [ContextMenu("Generate AssetId")]
-        void GenerateAssetId()
-        {
-#if UNITY_EDITOR
-            UnityEditor.EditorUtility.SetDirty(gameObject);
-            Guid guid = new Guid(UnityEditor.AssetDatabase.AssetPathToGUID(UnityEditor.AssetDatabase.GetAssetPath(gameObject)));
-            assetId = (uint)guid.GetHashCode();
-            UnityEditor.AssetDatabase.SaveAssetIfDirty(gameObject);
-#endif
         }
         [MessageHandler((ushort)ServerToClient.Spawn)]
         static void HandleSpawn(Message received)

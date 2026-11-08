@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 825641063
+  assetId: 2788892371
 --- !u!1 &4043061473287173848
 GameObject:
   m_ObjectHideFlags: 0

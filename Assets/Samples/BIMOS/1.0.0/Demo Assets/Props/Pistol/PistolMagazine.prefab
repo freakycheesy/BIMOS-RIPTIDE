@@ -308,7 +308,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9110369279059413227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d0e5f280420f5044b2903d457cd896b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ddfddf7c7963bb42a5679fbb2944ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRounds: 17
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 3138234832
 --- !u!1001 &6444923919926909485
 PrefabInstance:
   m_ObjectHideFlags: 0

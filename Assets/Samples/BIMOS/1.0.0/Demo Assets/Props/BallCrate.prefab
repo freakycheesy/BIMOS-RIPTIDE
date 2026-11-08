@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &233964316341414324
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &553093959277837630
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &695425331340294136
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &1182104603995058675
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &1913059629037818152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &2513525215290988363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,7 +1539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &2758607224358472069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &3941291214849700838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &4320613590568909309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,7 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &4321479124374150961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 1532613765
+  assetId: 1986053985
 --- !u!1 &6074480634899082121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,7 +2318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &6141061154227995935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,7 +2493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &6289544533957125848
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,7 +2668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &6455284061302957893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,7 +2976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &6872219007592269622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,7 +3284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &8074514641198646730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,7 +3459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &8224265022696979410
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,7 +3634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &8445838749470780360
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,7 +3809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 0
+  assetId: 1532613765
 --- !u!1 &8668251858569505951
 GameObject:
   m_ObjectHideFlags: 0

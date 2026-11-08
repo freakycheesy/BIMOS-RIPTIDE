@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c4054ebc449340898194b89f48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
-  assetId: 2670865212
+  assetId: 724738365
 --- !u!1001 &7234973123351490175
 PrefabInstance:
   m_ObjectHideFlags: 0
