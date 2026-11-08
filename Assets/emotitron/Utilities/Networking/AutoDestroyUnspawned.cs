@@ -54,7 +54,7 @@ namespace emotitron.Utilities.Networking
 		{
 			base.OnInspectorGUI();
 			EditorGUILayout.HelpBox("Destroys this gameobject if it exists in the scene at scene load. " +
-				"Allows network prefabs to be left in scene at build/play time, as a development convenience.",
+				"Allows network spawnPrefabs to be left in scene at build/play time, as a development convenience.",
 				MessageType.None);
 		}
 	}

@@ -5,18 +5,12 @@ namespace BIMOS.Netcode
 {
     public static class NetworkServer
     {
-        public static Server Instance { get; set; } = new();
         public static ushort CurrentTick { get; set; }
 
-        public static void Listen(ushort port = 7777, ushort maxConnections = 32, bool startClient = true)
-        {
-            Instance.Start(port, maxConnections);
-            if (startClient) NetworkClient.Connect("localhost", port);
-        }
         internal static void FixedUpdate()
         {
-            Instance.Update();
-            if (Instance.IsRunning)
+            NetworkManager.Server.Update();
+            if (NetworkManager.Server.IsRunning)
             {
                 if (CurrentTick % 200 == 0)
                     SendSync();
@@ -28,8 +22,8 @@ namespace BIMOS.Netcode
         static void SendSync()
         {
             Message message = Message.Create(MessageSendMode.Unreliable, ServerToClient.Sync).Add(CurrentTick);
-            if (NetworkClient.Instance.IsConnected) Instance.SendToAll(message, NetworkClient.Instance.Id);
-            else Instance.SendToAll(message);
+            if (NetworkManager.Client.IsConnected) NetworkManager.Server.SendToAll(message, NetworkManager.Client.Id);
+            else NetworkManager.Server.SendToAll(message);
         }
 
     }

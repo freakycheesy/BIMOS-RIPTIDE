@@ -30,7 +30,7 @@ namespace BIMOS.Netcode
         }
 
         [ContextMenu("Find NetworkIdentites and Register")]
-        void FindIdentities()
+        public void FindIdentities()
         {
             _identities = FindObjectsByType<NetworkIdentity>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID);
         }

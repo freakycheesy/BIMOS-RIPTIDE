@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Samples/BIMOS/1.0.0/Demo Assets/Levels/Sample.unity
+    guid: dfc662b33b1479742878a037c70dff6d
+  - enabled: 1
+    path: Assets/Samples/BIMOS/1.0.0/Demo Assets/Levels/Arena.unity
+    guid: 9da255691ec65c14281f1d04eb11a806
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b26be0b7bd40707469929d8baf5cfb64, type: 2}

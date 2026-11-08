@@ -170,7 +170,7 @@ namespace emotitron.Compression
 					hashcode = fieldname.GetHashCode();
 					return;
 
-				/// Prefabs can't immediately register with the SharedCrusherSO since they need to get their instanceId from the component,
+				/// SpawnPrefabs can't immediately register with the SharedCrusherSO since they need to get their instanceId from the component,
 				/// and StackTrace doesn't get us that. We get the instanceId from the Editor OnGui update.
 				case SharedCrusherDefine.ShareBy.Prefab:
 					return;

@@ -9,11 +9,14 @@ namespace BIMOS.Netcode
     [DefaultExecutionOrder(-100)]
     public class NetworkManager : MonoBehaviour
     {
+        public static Server Server { get; set; } = new();
+        public static Client Client { get; set; } = new();
+
         public static NetworkManager Instance { get; private set; }
 
-        [SerializeField] private GameObject[] _prefabs = new GameObject[256];
-        public Dictionary<uint, GameObject> Prefabs { get; } = new();
-        private void Start()
+        [SerializeField] public List<GameObject> spawnPrefabs;
+        public Dictionary<uint, GameObject> SpawnPrefabs { get; } = new();
+        private void Awake()
         {
             if (Instance)
             {
@@ -21,13 +24,13 @@ namespace BIMOS.Netcode
                 return;
             }
             Instance = this;
-            Prefabs.Clear();
+            SpawnPrefabs.Clear();
             RiptideLogger.Initialize(Debug.Log, false);
-            foreach (var prefab in _prefabs)
+            foreach (var prefab in spawnPrefabs)
             {
                 if(prefab.TryGetComponent(out NetworkIdentity identity))
                 {
-                    Prefabs.Add(identity.assetId, prefab);
+                    SpawnPrefabs.Add(identity.assetId, prefab);
                 }
                 else
                 {

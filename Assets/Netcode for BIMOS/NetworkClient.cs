@@ -27,14 +27,10 @@ namespace BIMOS.Netcode
             }
         }
         private static ushort tickDivergenceTolerance = 1;
-        public static Client Instance { get; set; } = new();
-        public static void Connect(string address, ushort port)
-        {
-            Instance.Connect($"{address}:{port}");
-        }
+
         internal static void FixedUpdate()
         {
-            Instance.Update();
+            NetworkManager.Client.Update();
         }
         static void SetTick(ushort serverTick)
         {

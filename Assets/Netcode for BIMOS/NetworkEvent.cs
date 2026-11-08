@@ -27,7 +27,7 @@ namespace BIMOS.Netcode
 
         private void CmdOnEvent(Connection sender, NetDataReader reader)
         {
-            foreach(var connection in NetworkServer.Instance.Clients)
+            foreach(var connection in NetworkManager.Server.Clients)
             {
                 if(allowDesync && connection == sender) continue;
                 identity.SendTargetRpc(RPC_EVENT, connection, MessageSendMode.Reliable, sender.Id);
@@ -36,11 +36,11 @@ namespace BIMOS.Netcode
 
         public void Invoke()
         {
-            if (!NetworkClient.Instance.IsConnected) {
+            if (!NetworkManager.Client.IsConnected) {
                 Event?.Invoke(0);
                 return;
             } 
-            if(allowDesync) Event?.Invoke(NetworkClient.Instance.Id);
+            if(allowDesync) Event?.Invoke(NetworkManager.Client.Id);
             identity.SendCommand(CMD_EVENT, sendMode:MessageSendMode.Reliable);
         }
     }

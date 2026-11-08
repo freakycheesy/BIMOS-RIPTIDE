@@ -70,9 +70,9 @@ namespace emotitron
 			{
 				UniqueNamesList<T> zone = (UniqueNamesList<T>)objs[i];
 
-				//TODO this is suspect as to whether or not it will be finding prefabs at runtime.
+				//TODO this is suspect as to whether or not it will be finding spawnPrefabs at runtime.
 #if UNITY_EDITOR
-				// ignore prefabs
+				// ignore spawnPrefabs
 				if (EditorUtility.IsPersistent(zone.gameObject))
 					continue;
 #endif

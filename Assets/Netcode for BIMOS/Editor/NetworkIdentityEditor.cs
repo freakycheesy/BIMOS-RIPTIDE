@@ -2,10 +2,10 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace BIMOS.Netcode
+namespace BIMOS.Netcode.Editor
 {
     [CustomEditor(typeof(NetworkIdentity), true), CanEditMultipleObjects]
-    public class NetworkIdentityEditor : Editor
+    public class NetworkIdentityEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
