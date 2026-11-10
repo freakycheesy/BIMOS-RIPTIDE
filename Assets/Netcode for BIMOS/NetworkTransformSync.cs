@@ -1,10 +1,11 @@
+using LiteNetLib.Utils;
 using Riptide;
 using System;
 using UnityEngine;
 
 namespace BIMOS.Netcode
 {
-    public class NetworkTransformSync : NetworkBehaviour
+    public class NetworkTransformSync : MonoBehaviour, INetworked
     {
         public bool syncScale;
         public bool physicsSync;
@@ -13,38 +14,32 @@ namespace BIMOS.Netcode
         private Vector3 netPos;
         private Quaternion netRot;    
         private Vector3 velocity;
-        public override void OnStart()
+        void Start()
         {
             if(physicsSync) body = GetComponent<Rigidbody>();
         }
-        private void FixedUpdate()
-        {
-            if (identity.isMine)
-            {
-                identity.Serialize();
-            }
-        }
-        public override void OnSerialize(Message stream)
+
+        public void OnSerialize(NetDataWriter stream)
         {
             if (physicsSync)
             {
-                stream.Add(body.position);
-                stream.Add(body.rotation);
-                stream.Add(body.linearVelocity);
-                stream.Add(body.angularVelocity);
+                stream.Put(body.position);
+                stream.Put(body.rotation);
+                stream.Put(body.linearVelocity);
+                stream.Put(body.angularVelocity);
             }
             else
             {
-                stream.Add(transform.position);
-                stream.Add(transform.rotation);
+                stream.Put(transform.position);
+                stream.Put(transform.rotation);
             }
             if (syncScale)
             {
-                stream.Add(transform.localScale);
+                stream.Put(transform.localScale);
             }       
-            stream.Add(Environment.TickCount);
+            stream.Put(NetworkClient.ServerTick);
         }
-        public override void OnDeserialize(Message stream)
+        public void OnDeserialize(NetDataReader stream)
         {
             netPos = stream.GetVector3();
             netRot = stream.GetQuaternion();

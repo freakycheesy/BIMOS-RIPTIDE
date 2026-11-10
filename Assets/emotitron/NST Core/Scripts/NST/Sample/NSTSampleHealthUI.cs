@@ -243,7 +243,7 @@ namespace emotitron.NST.Sample
 			
 			base.OnInspectorGUI();
 
-			EditorGUILayout.HelpBox("This component should be placed on a UI Text or UI Image (with Image Type set to Filled ideally). " +
+			EditorGUILayout.HelpBox("This component should be placed on a UI Text or UI Image (with Image Targets set to Filled ideally). " +
 				"It can monitor IVitals on the root of this object, or of the local player gameobject.", MessageType.None);
 
 			string monitorTooltip = "Which IVital should be be monitoring? Auto will try to find an IVital interface on the root of this object first, and if it can't find one will subscribe to the local player IVital.";

@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace BIMOS.Netcode.Editor
 {
-    [CustomEditor(typeof(NetworkLevel))]
+    [CustomEditor(typeof(NetworkSceneManager))]
     public class NetworkLevelEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
-            var target = (NetworkLevel)this.target;
+            var target = (NetworkSceneManager)this.target;
             base.OnInspectorGUI();
             if(GUILayout.Button("Bake NetworkIdentities"))
             {

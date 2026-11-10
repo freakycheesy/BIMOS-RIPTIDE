@@ -4,8 +4,9 @@ using Riptide;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NetworkedDistanceTrigger : NetworkBehaviour, IDistanceTrigger
+public class NetworkedDistanceTrigger : MonoBehaviour, IRpc, IDistanceTrigger
 {
+    private NetworkIdentity netIdentity;
     public UnityEvent OnActivate, OnDeactivate;
     public UpdateEvent OnUpdate;
     public bool AllowDesync = true;
@@ -20,41 +21,34 @@ public class NetworkedDistanceTrigger : NetworkBehaviour, IDistanceTrigger
 
     private bool _isActivated;
 
-    // RPCs
-    private byte CMD_ACTIVATE;
-    private byte RPC_ACTIVATE;
-    private byte CMD_DEACTIVATE;
-    private byte RPC_DEACTIVATE;
-
-    public override void RegisterRpcs(NetworkIdentity identity)
+    void Awake()
     {
-        CMD_ACTIVATE=identity.RegisterCommand(CmdActivate);
-        RPC_ACTIVATE = identity.RegisterRpc((_) => RpcActivated());
-        CMD_DEACTIVATE = identity.RegisterCommand(CmdDeactivate);
-        RPC_DEACTIVATE = identity.RegisterRpc((_) => RpcDeactivated());
+        netIdentity = GetComponentInParent<NetworkIdentity>();
     }
 
-    private void CmdDeactivate(Connection sender, NetDataReader reader)
+    [Rpc(RpcTargets.Server)]
+    private void CmdDeactivate(ushort sender)
     {
         if (AllowDesync)
         {
-            identity.SendClientRpc(RPC_DEACTIVATE, sender);
+            netIdentity.SendClientRpc(nameof(RpcDeactivated), sender);
         }
         else
         {
-            identity.SendClientRpc(RPC_DEACTIVATE);
+            netIdentity.SendClientRpc(nameof(RpcDeactivated));
         }
     }
 
-    private void CmdActivate(Connection sender, NetDataReader reader)
+    [Rpc(RpcTargets.Server)]
+    private void CmdActivate(ushort sender)
     {
         if (AllowDesync)
         {
-            identity.SendClientRpc(RPC_ACTIVATE, sender);
+            netIdentity.SendClientRpc(nameof(RpcActivated), sender);
         }
         else
         {
-            identity.SendClientRpc(RPC_ACTIVATE);
+            netIdentity.SendClientRpc(nameof(RpcActivated));
         }
     }
 
@@ -77,13 +71,13 @@ public class NetworkedDistanceTrigger : NetworkBehaviour, IDistanceTrigger
     public void Activated()
     {
         if (AllowDesync) RpcActivated();
-        identity.SendCommand(CMD_ACTIVATE);
+        netIdentity.SendServerRpc(nameof(CmdActivate));
     }
 
     public void Deactivated()
     {
         if (AllowDesync) RpcDeactivated();
-        identity.SendCommand(CMD_DEACTIVATE);
+        netIdentity.SendServerRpc(nameof(CmdDeactivate));
     }
     private void RpcActivated()
     {

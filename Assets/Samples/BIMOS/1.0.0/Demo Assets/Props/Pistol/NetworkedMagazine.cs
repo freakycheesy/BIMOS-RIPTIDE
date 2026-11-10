@@ -1,7 +1,8 @@
 using BIMOS.Netcode;
+using LiteNetLib.Utils;
 using UnityEngine;
 
-public class NetworkedMagazine : NetworkBehaviour, IMagazine
+public class NetworkedMagazine : MonoBehaviour, INetworked, IMagazine
 {
     public int MaxRounds;
     public int RemainingRounds;
@@ -31,5 +32,15 @@ public class NetworkedMagazine : NetworkBehaviour, IMagazine
     private void UpdateAnimator()
     {
         _animator.SetFloat("Full", (float)RemainingRounds / MaxRounds);
+    }
+
+    public void OnSerialize(NetDataWriter stream)
+    {
+        stream.Put(RemainingRounds);
+    }
+
+    public void OnDeserialize(NetDataReader stream)
+    {
+        RemainingRounds = stream.GetInt();
     }
 }

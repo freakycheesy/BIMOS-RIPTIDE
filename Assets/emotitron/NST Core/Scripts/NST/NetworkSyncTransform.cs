@@ -834,7 +834,7 @@ namespace emotitron.NST
 			//Debug.Log(
 			XDebug.Log(!XDebug.logInfo ? null :
 				(Time.time + " nid:"  + NstId + " fid:" + frame.frameid + " <color=red><b>Teleport</b></color> hard:" + hardTeleport + " new: " +
-				((rb != null) ? (" rbVel:" + rb.velocity * 100f) : "" ) + " go.pos " + cachedTransform.position + "  " +
+				((rb != null) ? (" rbVel:" + rb.linearVelocity * 100f) : "" ) + " go.pos " + cachedTransform.position + "  " +
 				frame.compPos + " / " + pos + " + Distance: " + Vector3.Distance(pos, cachedTransform.position) + "\n" + frame));
 			
 			bool wasKinematic = false;
@@ -843,7 +843,7 @@ namespace emotitron.NST
 			{
 				rb.Sleep();
 				wasKinematic = rb.isKinematic;
-				rb.velocity = new Vector3(0, 0, 0);
+				rb.linearVelocity = new Vector3(0, 0, 0);
 				rb.isKinematic = true;
 			}
 
@@ -1024,7 +1024,7 @@ namespace emotitron.NST
 			if (!IsKeyframe(frame.frameid))
 				bitstream.WriteInt((int)frame.rootBitCullLevel, 2);
 
-			BandwidthUsage.AddUsage(ref bitstream, "Root Pos Comp Type");
+			BandwidthUsage.AddUsage(ref bitstream, "Root Pos Comp Targets");
 
 			// Send position key or lowerbits
 			if (frame.rootBitCullLevel != BitCullingLevel.DropAll)

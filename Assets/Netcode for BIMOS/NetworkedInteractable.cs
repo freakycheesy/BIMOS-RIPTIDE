@@ -6,8 +6,9 @@ using UnityEngine.Events;
 
 namespace BIMOS.Netcode
 {
-    public class NetworkedInteractable : NetworkBehaviour, IGrabbable, IInteractable
+    public class NetworkedInteractable : MonoBehaviour, IRpc, IGrabbable, IInteractable
     {
+        private NetworkIdentity netIdentity;
         public UnityEvent
              TriggerDownEvent,
              TriggerUpEvent,
@@ -21,46 +22,41 @@ namespace BIMOS.Netcode
         public TickEvent OnPhysicsTick;
         public bool AllowDesync = true;
         public bool AutoOwnership = true;
+        public bool IsReliable = true;
         private Grab _grab;
 
-        private byte CMD_GRAB;
-        private byte RPC_GRAB;
-        private byte CMD_RELEASE;
-        private byte RPC_RELEASE;
         private void Awake()
         {
+            netIdentity = GetComponentInParent<NetworkIdentity>();
             _grab = GetComponent<Grab>();
             _grab.ReleaseEvent += OnRelease;
         }
-        public override void RegisterRpcs(NetworkIdentity identity)
-        {
-            CMD_GRAB = identity.RegisterCommand(CmdGrab);
-            RPC_GRAB = identity.RegisterRpc((_)=>RpcGrab());
-            CMD_RELEASE = identity.RegisterCommand(CmdRelease);
-            RPC_RELEASE = identity.RegisterRpc((_)=>RpcRelease());
-        }
 
+        [Rpc(RpcTargets.Client)]
         private void RpcRelease()
         {
             ReleaseEvent.Invoke();
         }
 
-        private void CmdRelease(Connection sender, NetDataReader reader)
+        [Rpc(RpcTargets.Server)]
+        private void CmdRelease(ushort sender)
         {
-            if (AllowDesync) identity.SendClientRpc(RPC_RELEASE, sender, MessageSendMode.Reliable);
-            else identity.SendClientRpc(RPC_RELEASE, MessageSendMode.Reliable);
+            if (AllowDesync) netIdentity.SendClientRpc(nameof(RpcRelease), sender, IsReliable);
+            else netIdentity.SendClientRpc(nameof(RpcRelease), reliable:IsReliable);
         }
 
+        [Rpc(RpcTargets.Client)]
         private void RpcGrab()
         {
             GrabEvent.Invoke();
         }
 
-        private void CmdGrab(Connection sender, NetDataReader reader)
+        [Rpc(RpcTargets.Server)]
+        private void CmdGrab(ushort sender)
         {
-            if (AutoOwnership) identity.SetOwnership(sender);
-            if (AllowDesync) identity.SendClientRpc(RPC_GRAB, sender, MessageSendMode.Reliable);
-            else identity.SendClientRpc(RPC_GRAB, MessageSendMode.Reliable);
+            if (AutoOwnership) netIdentity.SetOwnership(sender);
+            if (AllowDesync) netIdentity.SendClientRpc(nameof(RpcGrab), sender, IsReliable);
+            else netIdentity.SendClientRpc(nameof(RpcGrab), reliable:IsReliable);
         }
 
         private void CheckInputs(out float trigger, out bool primary, out bool secondary)
@@ -127,12 +123,12 @@ namespace BIMOS.Netcode
         public void OnGrab()
         {
             if(AllowDesync) RpcGrab();
-            identity.SendCommand(CMD_GRAB, MessageSendMode.Reliable);
+            netIdentity.SendServerRpc(nameof(CmdGrab), reliable:IsReliable);
         }
         public void OnRelease()
         {
             if (AllowDesync) RpcRelease();
-            identity.SendCommand(CMD_RELEASE, MessageSendMode.Reliable);
+            netIdentity.SendServerRpc(nameof(CmdRelease), reliable: IsReliable);
         }
 
         [System.Serializable]

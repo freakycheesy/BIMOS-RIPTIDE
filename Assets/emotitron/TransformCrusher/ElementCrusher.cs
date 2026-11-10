@@ -762,7 +762,7 @@ namespace emotitron.Compression
 					return;
 
 				default:
-					XDebug.Log("You are sending a transform to be crushed, but the Element Type is Generic - did you want Position?");
+					XDebug.Log("You are sending a transform to be crushed, but the Element Targets is Generic - did you want Position?");
 					Write(nonalloc, (local) ? trans.localPosition : trans.position, bytes, ref bitposition, bcl);
 					return;
 			}
@@ -785,7 +785,7 @@ namespace emotitron.Compression
 					return Write(trans.localScale, bytes, ref bitposition, bcl);
 
 				default:
-					XDebug.Log("You are sending a transform to be crushed, but the Element Type is Generic - did you want Position?");
+					XDebug.Log("You are sending a transform to be crushed, but the Element Targets is Generic - did you want Position?");
 					return Write((local) ? trans.localPosition : trans.position, bytes, ref bitposition, bcl);
 			}
 		}
@@ -986,7 +986,7 @@ namespace emotitron.Compression
 					return;
 
 				default:
-					XDebug.Log("You are sending a transform to be crushed, but the Element Type is Generic - did you want Position?");
+					XDebug.Log("You are sending a transform to be crushed, but the Element Targets is Generic - did you want Position?");
 					Write(nonalloc, (local) ? trans.localPosition : trans.position, buffer, ref bitposition, bcl);
 					return;
 			}
@@ -1241,7 +1241,7 @@ namespace emotitron.Compression
 					return;
 
 				default:
-					XDebug.Log("You are sending a transform to be crushed, but the Element Type is Generic - did you want Position?");
+					XDebug.Log("You are sending a transform to be crushed, but the Element Targets is Generic - did you want Position?");
 					Write(nonalloc, (local) ? trans.localPosition : trans.position, ref buffer, ref bitposition, bcl);
 					return;
 			}
@@ -1267,7 +1267,7 @@ namespace emotitron.Compression
 					return;
 
 				default:
-					XDebug.Log("You are sending a transform to be crushed, but the Element Type is Generic - did you want Position?");
+					XDebug.Log("You are sending a transform to be crushed, but the Element Targets is Generic - did you want Position?");
 					Write((local) ? trans.localPosition : trans.position, ref buffer, ref bitposition, bcl);
 					return;
 			}
@@ -1588,7 +1588,7 @@ namespace emotitron.Compression
 					return;
 
 				default:
-					XDebug.LogWarning("You are sending a transform to be crushed, but the Element Type is Generic?  Assuming position - change the crusher from Generic to the correct TRS.", true, true);
+					XDebug.LogWarning("You are sending a transform to be crushed, but the Element Targets is Generic?  Assuming position - change the crusher from Generic to the correct TRS.", true, true);
 					Compress(nonalloc, (local) ? trans.localPosition : trans.position);
 					return;
 			}
@@ -1650,7 +1650,7 @@ namespace emotitron.Compression
 					break;
 
 				default:
-					XDebug.LogWarning("You are sending a transform to be crushed, but the Element Type is Generic?  Assuming position - change the crusher from Generic to the correct TRS.", true, true);
+					XDebug.LogWarning("You are sending a transform to be crushed, but the Element Targets is Generic?  Assuming position - change the crusher from Generic to the correct TRS.", true, true);
 					CompressAndWrite((local) ? trans.localPosition : trans.position, ref bitstream);
 					break;
 			}
@@ -1681,7 +1681,7 @@ namespace emotitron.Compression
 					break;
 
 				default:
-					XDebug.LogWarning("You are sending a transform to be crushed, but the Element Type is Generic?  Assuming position - change the crusher from Generic to the correct TRS.", true, true);
+					XDebug.LogWarning("You are sending a transform to be crushed, but the Element Targets is Generic?  Assuming position - change the crusher from Generic to the correct TRS.", true, true);
 					CompressAndWrite((local) ? trans.localPosition : trans.position, buffer, ref bitposition);
 					break;
 			}
@@ -2633,7 +2633,7 @@ namespace emotitron.Compression
 				if (target.TRSType != trsType)
 				{
 					haschanged = true;
-					Undo.RecordObject(property.serializedObject.targetObject, "Select TRS Type");
+					Undo.RecordObject(property.serializedObject.targetObject, "Select TRS Targets");
 					target.TRSType = trsType;
 				}
 			}
@@ -2645,7 +2645,7 @@ namespace emotitron.Compression
 				if (target.TRSType != trsType)
 				{
 					haschanged = true;
-					Undo.RecordObject(property.serializedObject.targetObject, "Select Rotation Type");
+					Undo.RecordObject(property.serializedObject.targetObject, "Select Rotation Targets");
 					target.TRSType = trsType;
 				}
 			}

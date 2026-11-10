@@ -189,7 +189,7 @@ namespace emotitron.NST.Sample
 			if (nstProj != null)
 				nstProj.OwnerNst = nst;
 
-			poolProj.rb.velocity = poolProj.gameObject.transform.forward * projVelocity;
+			poolProj.rb.linearVelocity = poolProj.gameObject.transform.forward * projVelocity;
 
 			// Changes color to color sent over the network as an example of how to use the Custom Message
 			poolProj.GetComponentInChildren<MeshRenderer>().material.color = msg.color;

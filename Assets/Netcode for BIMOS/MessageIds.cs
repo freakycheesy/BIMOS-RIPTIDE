@@ -13,7 +13,7 @@ namespace BIMOS.Netcode
     }
     public enum ClientToServer : ushort
     {
-        Command,
+        Rpc,
         Serialize,
     }
 }

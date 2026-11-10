@@ -291,7 +291,7 @@ MonoBehaviour:
   OnUpdate:
     m_PersistentCalls:
       m_Calls: []
-  AllowDesync: 1
+  AllowDesync: 0
   Value: 0
   _threshold: 0.5
   _maxDistance: 0.04
@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: BIMOS.Netcode::BIMOS.Netcode.NetworkIdentity
   assetId: 0
+  autoSync: 1
 --- !u!1 &3361568420748256959
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,12 @@ using UnityEngine;
 namespace BIMOS.Netcode
 {
     [DefaultExecutionOrder(-99)]
-    public class NetworkLevel : MonoBehaviour
+    public class NetworkSceneManager : MonoBehaviour
     {
         [SerializeField] private NetworkIdentity[] _identities;
         public Dictionary<int, NetworkIdentity> identities { get; private set; } = new Dictionary<int, NetworkIdentity>();
         public Dictionary<int, NetworkIdentity> spawned { get; private set; } = new Dictionary<int, NetworkIdentity>();
-        public static NetworkLevel Instance { get; private set; }
+        public static NetworkSceneManager Instance { get; private set; }
         private void Awake()
         {
             identities.Clear();
@@ -24,9 +24,9 @@ namespace BIMOS.Netcode
 
         public void RegisterIdentity(NetworkIdentity identity, bool isSpawned)
         {
-            identity.id = identities.Count;
-            identities.Add(identity.id, identity);
-            if(isSpawned) spawned.Add(identity.id, identity);
+            identity.netId = identities.Count;
+            identities.Add(identity.netId, identity);
+            if(isSpawned) spawned.Add(identity.netId, identity);
         }
 
         [ContextMenu("Find NetworkIdentites and Register")]

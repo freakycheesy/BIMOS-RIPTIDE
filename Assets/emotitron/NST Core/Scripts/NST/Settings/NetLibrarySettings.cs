@@ -44,7 +44,7 @@ namespace emotitron.NST
 
 		public override string AssetPath { get { return @"Assets/emotitron/NST Core/Resources/"; } }
 
-		public const string HELP_URL = "https://docs.google.com/document/d/1SOm5aZHBed0xVlPk8oX2_PsQ50KTJFgcr8dDXmtdwh8/edit#bookmark=id.c0t8i8v9ghji";
+		public const string HELP_URL = "https://docs.google.com/document/d/1SOm5aZHBed0xVlPk8oX2_PsQ50KTJFgcr8dDXmtdwh8/edit#bookmark=netId.c0t8i8v9ghji";
 		public override string HelpURL { get { return HELP_URL; } }
 
 		public override bool DrawGui(Object target, bool asFoldout, bool includeScriptField, bool initializeAsOpen, bool asWindow = false)

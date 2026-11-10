@@ -9,6 +9,9 @@ namespace BIMOS.Netcode.Editor
     {
         public override void OnInspectorGUI()
         {
+            EditorGUI.BeginDisabledGroup(true);
+            EditorGUILayout.IntField("Network Id", (target as NetworkIdentity).netId);
+            EditorGUI.EndDisabledGroup();
             base.OnInspectorGUI();
             if (GUILayout.Button("Bake AssetId"))
             {
